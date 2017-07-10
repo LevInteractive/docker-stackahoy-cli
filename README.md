@@ -11,7 +11,7 @@ This is a snippet from a [GitLab CI (gitlab-ci.yml)](https://docs.gitlab.com/ee/
 ```yml
 deploy:
   image: stackahoy/stackahoy-cli
-  stage: deploy_staging
+  stage: deploy
   script:
     - stackahoy deploy -t $STACKAHOY_TOKEN -b staging -r $REPO_ID
   only:
